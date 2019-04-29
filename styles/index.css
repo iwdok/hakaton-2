@@ -1,0 +1,102 @@
+.map{
+    width: 80vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+* {
+    font-family: Roboto;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    display: inline-flex;
+}
+
+.menu{
+    width: 20vw;
+    height: 100vh;
+}
+
+.box{
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 94%;
+    height: 96%;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+}
+
+.box > button{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15px;
+    height: 45px;
+    background: #1D976C;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: normal;
+    color: #FFFFFF;
+    transition: 0.2s;
+}
+
+.box > button:hover{
+    border: 1px solid #1D976C;
+    background: #FFFFFF;
+    color: #1D976C;
+}
+
+.date, .time{
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 15%;
+}
+
+.date > label, .time > label{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: normal;
+    color: #333333;
+    opacity: 0.9;
+}
+
+.time-input{
+    margin-left: 6px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.4;
+    padding: 5px;
+    width: 50px;
+}
+
+.date-input{
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.4;
+    padding: 5px;
+    width: 100%;
+}
+
+.logo{
+    margin-top: 48px;
+    margin-left: 47px;
+    width: 104px;
+    height: 64px;
+}

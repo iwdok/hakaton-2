@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>JUSTIFY</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../source/favicon.png"/>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=681e18bd-9b8e-4241-9b34-1c1c8e955c1b&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="box">
+                <img class="logo" src="../source/Logo.png">
+                <div class="date">
+                    <label>Дата</label>
+                    <input class="date-input" id="date" onchange="changeDate(this.value)" placeholder="27.03.2019">
+                </div>
+                <div class="time">
+                    <label>Время</label>
+                    <input class="time-input" id="hours" onchange="setTime(this.value)" placeholder="10">
+                    :
+                    <input class="time-input" id="minutes" placeholder="30">
+                </div>
+                <button onclick="makeAllLines()">Смотреть загруженность</button>
+            </div>
+        </div>
+        <div id="map" class="map"></div>
+    </div>
+</body>
+<script src="../js/lines.js"></script>
+</html>
